@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/base.min.css"/>
+  <link rel="stylesheet" href="css/choices.min.css"/>
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Educrat - قالب HTML دوره آنلاین و آموزش اِدُکرات</title>
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+
+  <main class="main-content">
+
+    <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
+	
+      <div class="header__container">
+        <div class="row justify-between items-center">
+
+          <div class="col-auto">
+            <div class="header-left">
+
+              <div class="header__logo ">
+                <a data-barba href="index.html">
+                  <img src="img/general/logo.svg" alt="logo">
+                </a>
+              </div>
+
+
+              <div class="header__explore text-green-1 mr-60 xl:mr-30 xl:d-none">
+                <a href="#" class="d-flex items-center" data-el-toggle=".js-explore-toggle">
+                  <i class="icon icon-explore ml-15"></i>
+                  دسته بندی ها
+                </a>
+
+                <div class="explore-content py-25 rounded-8 bg-white toggle-element js-explore-toggle">
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      برنامه نویسی<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      دیجیتال مارکتنیگ<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+
+                  <div class="explore__item">
+                    <a href="#" class="text-dark-1">سیستم عامل</a>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="#" class="text-dark-1">بانک های اطلاعاتی</a>
+                  </div>
+
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      طراحی وب<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="courses-single-6.html" class="text-dark-1">رباتیک</a>
+                  </div>
+
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      طراحی گرافیک<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      زبان انگلیسی<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      نگارش آکادمیک<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+
+                  <div class="explore__item">
+                    <a href="#" class="text-dark-1">علوم انسانی</a>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="#" class="text-dark-1">هوش مصنوعی</a>
+                  </div>
+
+
+                  <div class="explore__item">
+                    <a href="#" class="d-flex items-center justify-between text-dark-1">
+                      مهندسی نرم افزار<div class="icon-chevron-left text-11"></div>
+                    </a>
+                    <div class="explore__subnav rounded-8">
+                      <a class="text-dark-1" href="courses-single-1.html">طراحی وب</a>
+                      <a class="text-dark-1" href="courses-single-2.html">بانک های اطلاعاتی</a>
+                      <a class="text-dark-1" href="courses-single-3.html">برنامه نویسی موبایل</a>
+                      <a class="text-dark-1" href="courses-single-4.html">برنامه نویسی وب</a>
+                      <a class="text-dark-1" href="courses-single-5.html">مهندسی نرم افزار</a>
+                      <a class="text-dark-1" href="courses-single-6.html">سیستم عامل</a>
+                      <a class="text-dark-1" href="courses-single-1.html">مدیریت پروژه</a>
+                      <a class="text-dark-1" href="courses-single-2.html">برنامه نویسی وب</a>
+                    </div>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="courses-single-1.html" class="text-dark-1">فناوری و اطلاعات</a>
+                  </div>
+
+                  <div class="explore__item">
+                    <a href="courses-single-2.html" class="text-purple-1 underline">همه دسته بندی ها</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="header-menu js-mobile-menu-toggle ">
+            <div class="header-menu__content">
+              <div class="mobile-bg js-mobile-bg"></div>
+
+              <div class="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
+                <a href="login.html" class="text-dark-1">ورود</a>
+                <a href="signup.html" class="text-dark-1 mr-30">ثبت نام</a>
+              </div>
+
+              <div class="menu js-navList">
+                <ul class="menu__nav text-white -is-active">
+                  <li class="menu-item-has-children">
+                    <a data-barba href="#">
+                      صفحه اصلی <i class="icon-chevron-left text-11 mr-10"></i>
+                    </a>
+
+                    <ul class="subnav">
+                      <li class="menu__backButton js-nav-list-back">
+                        <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> صفحه اصلی</a>
+                      </li>
+
+                      <li><a href="index.html">نسخه 1</a></li>
+
+                      <li><a href="home-2.html">نسخه 2</a></li>
+
+                      <li><a href="home-3.html">نسخه 3</a></li>
+
+                      <li><a href="home-4.html">نسخه 4</a></li>
+
+                      <li><a href="home-5.html">نسخه 5</a></li>
+
+                      <li><a href="home-6.html">نسخه 6</a></li>
+
+                      <li><a href="home-7.html">نسخه 7</a></li>
+
+                      <li><a href="home-8.html">نسخه 8</a></li>
+
+                      <li><a href="home-9.html">نسخه 9</a></li>
+
+                      <li><a href="home-10.html">نسخه 10</a></li>
+
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children -has-mega-menu">
+                    <a data-barba href="#">صفحات <i class="icon-chevron-left text-11 mr-10"></i></a>
+
+
+                    <div class="mega xl:d-none">
+                      <div class="mega__menu">
+                        <div class="row x-gap-40">
+                          <div class="col">
+                            <h4 class="text-17 fw-500 mb-20">طرح بندی لیست دوره ها</h4>
+
+                            <ul class="mega__list">
+
+                              <li><a data-barba href="courses-list-1.html">نسخه 1</a></li>
+
+                              <li><a data-barba href="courses-list-2.html">نسخه 2</a></li>
+
+                              <li><a data-barba href="courses-list-3.html">نسخه 3</a></li>
+
+                              <li><a data-barba href="courses-list-4.html">نسخه 4</a></li>
+
+                              <li><a data-barba href="courses-list-5.html">نسخه 5</a></li>
+
+                              <li><a data-barba href="courses-list-6.html">نسخه 6</a></li>
+
+                              <li><a data-barba href="courses-list-7.html">نسخه 7</a></li>
+
+                              <li><a data-barba href="courses-list-8.html">نسخه 8</a></li>
+
+                            </ul>
+
+                          </div>
+
+                          <div class="col">
+                            <h4 class="text-17 fw-500 mb-20">طرح بندی جزئیات دوره</h4>
+
+                            <ul class="mega__list">
+
+                              <li><a data-barba href="courses-single-1.html">نسخه 1</a></li>
+
+                              <li><a data-barba href="courses-single-2.html">نسخه 2</a></li>
+
+                              <li><a data-barba href="courses-single-3.html">نسخه 3</a></li>
+
+                              <li><a data-barba href="courses-single-4.html">نسخه 4</a></li>
+
+                              <li><a data-barba href="courses-single-5.html">نسخه 5</a></li>
+
+                              <li><a data-barba href="courses-single-6.html">نسخه 6</a></li>
+
+                            </ul>
+
+                          </div>
+
+                          <div class="col">
+                            <h4 class="text-17 fw-500 mb-20">درباره دوره</h4>
+
+                            <ul class="mega__list">
+
+                              <li><a data-barba href="lesson-single-1.html">معرفی دوره نسخه 1</a></li>
+
+                              <li><a data-barba href="lesson-single-2.html">معرفی دوره نسخه 2</a></li>
+
+                              <li><a data-barba href="instructors-list-1.html">لیست مدرسان نسخه 1</a></li>
+
+                              <li><a data-barba href="instructors-list-2.html">لیست مدرسان نسخه 2</a></li>
+
+                              <li><a data-barba href="instructors-single.html">جزئیات مدرس نسخه 1</a></li>
+
+                              <li><a data-barba href="instructors-become.html">جزئیات مدرس نسخه 2</a></li>
+
+                            </ul>
+
+                          </div>
+
+                          <div class="col">
+                            <h4 class="text-17 fw-500 mb-20">صفحات داشبورد</h4>
+
+                            <ul class="mega__list">
+
+                              <li><a data-barba href="dashboard.html">داشبورد نسخه 1</a></li>
+
+                              <li><a data-barba href="dshb-courses.html">لیست دوره ها</a></li>
+
+                              <li><a data-barba href="dshb-bookmarks.html">مورد علاقه ها</a></li>
+
+                              <li><a data-barba href="dshb-listing.html">افزودن دوره جدید</a></li>
+
+                              <li><a data-barba href="dshb-reviews.html">دیدگاه ها</a></li>
+
+                              <li><a data-barba href="dshb-settings.html">تنظیمات</a></li>
+
+                              <li><a data-barba href="dshb-administration.html">مدیریت</a></li>
+
+                              <li><a data-barba href="dshb-assignment.html">وظایف</a></li>
+
+                              <li><a data-barba href="dshb-calendar.html">تقویم</a></li>
+
+                              <li><a data-barba href="dshb-dashboard.html">داشبورد نسخه 2</a></li>
+
+                              <li><a data-barba href="dshb-dictionary.html">دیگشنیری</a></li>
+
+                              <li><a data-barba href="dshb-forums.html">انجمن</a></li>
+
+                              <li><a data-barba href="dshb-grades.html">لیست نمرات</a></li>
+
+                              <li><a data-barba href="dshb-messages.html">ارسال تیکت</a></li>
+
+                              <li><a data-barba href="dshb-participants.html">هنرجویان</a></li>
+
+                              <li><a data-barba href="dshb-quiz.html">سوالات</a></li>
+
+                              <li><a data-barba href="dshb-survey.html">نظرسنجی</a></li>
+
+                            </ul>
+
+                          </div>
+
+                          <div class="col">
+                            <h4 class="text-17 fw-500 mb-20">برترین دوره ها</h4>
+
+                            <ul class="mega__list">
+
+                              <li><a data-barba href="#">برنامه نویسی وب</a></li>
+
+                              <li><a data-barba href="#">برنامه نویسی موبایل</a></li>
+
+                              <li><a data-barba href="#">دیجیتال مارکتینگ</a></li>
+
+                              <li><a data-barba href="#">رباتیک</a></li>
+
+                              <li><a data-barba href="#">حسابداری و مالی</a></li>
+
+                              <li><a data-barba href="#">گرافیک</a></li>
+
+                              <li><a data-barba href="#">مشاهده همه</a></li>
+
+                            </ul>
+
+                          </div>
+                        </div>
+
+                        <div class="mega-banner bg-purple-1 ml-40">
+                          <div class="text-24 lh-15 text-white fw-700">
+                            پیوستن به بیش از<br>
+                            <span class="text-green-1">8 میلیون دانشجو</span>
+                            در سراسر جهان
+                          </div>
+                          <a href="#" class="button -md -green-1 text-dark-1 fw-500 col-12">آموزش رایگان</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <ul class="subnav d-none xl:d-block">
+                      <li class="menu__backButton js-nav-list-back">
+                        <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> دوره ها</a>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">طرح بندی لیست دوره ها<div class="icon-chevron-left text-11"></div></a>
+
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> طرح بندی لیست دوره ها</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-1.html">نسخه 1</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-2.html">نسخه 2</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-3.html">نسخه 3</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-4.html">نسخه 4</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-5.html">نسخه 5</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-6.html">نسخه 6</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-7.html">نسخه 7</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-8.html">نسخه 8</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-list-all.html">مشاهده لیست دوره ها</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">طرح بندی جزئیات دوره<div class="icon-chevron-left text-11"></div></a>
+
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> طرح بندی جزئیات دوره</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-single-1.html">نسخه 1</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-single-2.html">نسخه 2</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-single-3.html">نسخه 3</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-single-4.html">نسخه 4</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-single-5.html">نسخه 5</a>
+                          </li>
+
+                          <li>
+                            <a href="courses-single-6.html">نسخه 6</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">درباره دوره <div class="icon-chevron-left text-11"></div></a>
+
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> درباره دوره</a>
+                          </li>
+
+                          <li>
+                            <a href="lesson-single-1.html">معرفی دوره نسخه 1</a>
+                          </li>
+
+                          <li>
+                            <a href="lesson-single-2.html">معرفی دوره نسخه 2</a>
+                          </li>
+
+                          <li>
+                            <a href="instructors-list-1.html">لیست مدرسان نسخه 1</a>
+                          </li>
+
+                          <li>
+                            <a href="instructors-list-2.html">لیست مدرسان نسخه 2</a>
+                          </li>
+
+                          <li>
+                            <a href="instructors-single.html">جزئیات مدرس</a>
+                          </li>
+
+                          <li>
+                            <a href="instructors-become.html">مدرس شوید</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">صفحات داشبورد<div class="icon-chevron-left text-11"></div></a>
+
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> صفحات داشبورد</a>
+                          </li>
+
+                             <li><a href="dashboard.html">داشبورد نسخه 1</a></li>
+
+                              <li><a href="dshb-courses.html">لیست دوره ها</a></li>
+
+                              <li><a href="dshb-bookmarks.html">مورد علاقه ها</a></li>
+
+                              <li><a href="dshb-listing.html">افزودن دوره جدید</a></li>
+
+                              <li><a href="dshb-reviews.html">دیدگاه ها</a></li>
+
+                              <li><a href="dshb-settings.html">تنظیمات</a></li>
+
+                              <li><a href="dshb-administration.html">مدیریت</a></li>
+
+                              <li><a href="dshb-assignment.html">وظایف</a></li>
+
+                              <li><a href="dshb-calendar.html">تقویم</a></li>
+
+                              <li><a href="dshb-dashboard.html">داشبورد نسخه 2</a></li>
+
+                              <li><a href="dshb-dictionary.html">دیگشنیری</a></li>
+
+                              <li><a href="dshb-forums.html">انجمن</a></li>
+
+                              <li><a href="dshb-grades.html">لیست نمرات</a></li>
+
+                              <li><a href="dshb-messages.html">ارسال تیکت</a></li>
+
+                              <li><a href="dshb-participants.html">هنرجویان</a></li>
+
+                              <li><a href="dshb-quiz.html">سوالات</a></li>
+
+                              <li><a href="dshb-survey.html">نظرسنجی</a></li>
+
+                        </ul>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">برترین دوره ها<div class="icon-chevron-left text-11"></div></a>
+
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> برترین دوره ها</a>
+                          </li>
+
+                              <li><a href="#">برنامه نویسی وب</a></li>
+
+                              <li><a href="#">برنامه نویسی موبایل</a></li>
+
+                              <li><a href="#">دیجیتال مارکتینگ</a></li>
+
+                              <li><a href="#">رباتیک</a></li>
+
+                              <li><a href="#">حسابداری و مالی</a></li>
+
+                              <li><a href="#">گرافیک</a></li>
+
+                              <li><a href="#">مشاهده همه</a></li>
+
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a data-barba href="#">رویدادها <i class="icon-chevron-left text-11 mr-10"></i></a>
+                    <ul class="subnav">
+                      <li class="menu__backButton js-nav-list-back">
+                        <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> رویدادها</a>
+                      </li>
+
+                      <li><a href="event-list-1.html">لیست نسخه 1</a></li>
+
+                      <li><a href="event-list-2.html">لیست نسخه 2</a></li>
+
+                      <li><a href="event-single.html">جزئیات رویداد</a></li>
+
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a data-barba href="#">وبلاگ <i class="icon-chevron-left text-11 mr-10"></i></a>
+                    <ul class="subnav">
+                      <li class="menu__backButton js-nav-list-back">
+                        <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> وبلاگ</a>
+                      </li>
+
+                      <li><a href="blog-list-1.html">لیست نسخه 1</a></li>
+
+                      <li><a href="blog-list-2.html">لیست نسخه 2</a></li>
+
+                      <li><a href="blog-list-3.html">لیست نسخه 3</a></li>
+
+                      <li><a href="blog-single.html">جزئیات وبلاگ</a></li>
+
+                    </ul>
+                  </li>
+
+                  <li class="menu-item-has-children">
+                    <a data-barba href="#">
+                      سایر <i class="icon-chevron-left text-11 mr-10"></i>
+                    </a>
+
+                    <ul class="subnav">
+                      <li class="menu__backButton js-nav-list-back">
+                        <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> سایر</a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">درباره ما<div class="icon-chevron-left text-11"></div></a>
+
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> درباره ما</a>
+                          </li>
+
+                          <li>
+                            <a href="about-1.html">نسخه 1</a>
+                          </li>
+
+                          <li>
+                            <a href="about-2.html">نسخه 2</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">تماس با ما<div class="icon-chevron-left text-11"></div></a>
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 ml-10"></i> تماس با ما</a>
+                          </li>
+
+                          <li>
+                            <a href="contact-1.html">نسخه 1</a>
+                          </li>
+
+                          <li>
+                            <a href="contact-2.html">نسخه 2</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+                      <li class="menu-item-has-children">
+                        <a href="#">فروشگاه<div class="icon-chevron-left text-11"></div></a>
+                        <ul class="subnav">
+                          <li class="menu__backButton js-nav-list-back">
+                            <a href="#"><i class="icon-chevron-right text-13 mr-10"></i> فروشگاه</a>
+                          </li>
+
+                          <li>
+                            <a href="shop-cart.html">سبد خرید</a>
+                          </li>
+
+                          <li>
+                            <a href="shop-checkout.html">تسویه حساب</a>
+                          </li>
+
+                          <li>
+                            <a href="shop-list.html">لیست محصولات</a>
+                          </li>
+
+                          <li>
+                            <a href="shop-order.html">پرداخت موفق</a>
+                          </li>
+
+                          <li>
+                            <a href="shop-single.html">جزئیات محصول</a>
+                          </li>
+
+                        </ul>
+                      </li>
+
+
+                      <li>
+                        <a href="pricing.html">پلان قیمت گذاری</a>
+                      </li>
+
+                      <li>
+                        <a href="404.html">صفحه 404</a>
+                      </li>
+
+                      <li>
+                        <a href="terms.html">قوانین سایت</a>
+                      </li>
+
+                      <li>
+                        <a href="help-center.html">پشتیبانی</a>
+                      </li>
+
+                      <li>
+                        <a href="login.html">ورود</a>
+                      </li>
+
+                      <li>
+                        <a href="signup.html">ثبت نام</a>
+                      </li>
+
+                      <li>
+                        <a href="ui-elements.html">المان های کاربردی</a>
+                      </li>
+
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a data-barba href="contact-1.html">تماس با ما</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mobile-footer px-20 py-20 border-top-light js-mobile-footer">
+                <div class="mobile-footer__number">
+                  <div class="text-17 fw-500 text-dark-1">تماس با ما</div>
+                  <div class="text-17 fw-500 text-purple-1">02188888888</div>
+                </div>
+
+                <div class="lh-2 mt-10">
+                  <div>تهران، خیابان ولیعصر<br> خیابان پارک وی مجتمع صدف</div>
+                  <div>example@educrat.com</div>
+                </div>
+
+                <div class="mobile-socials mt-10">
+
+                  <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+
+                  <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+
+                  <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+
+                  <a href="#" class="d-flex items-center justify-center rounded-full size-40">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="header-menu-close" data-el-toggle=".js-mobile-menu-toggle">
+              <div class="size-40 d-flex items-center justify-center rounded-full bg-white">
+                <div class="icon-close text-dark-1 text-16"></div>
+              </div>
+            </div>
+
+            <div class="header-menu-bg"></div>
+          </div>
+
+
+          <div class="col-auto">
+            <div class="header-right d-flex items-center">
+              <div class="header-right__icons text-white d-flex items-center">
+
+                <div class="">
+                  <button class="d-flex items-center text-white" data-el-toggle=".js-search-toggle">
+                    <i class="text-20 icon icon-search"></i>
+                  </button>
+
+                  <div class="toggle-element js-search-toggle">
+                    <div class="header-search pt-90 bg-white shadow-4">
+                      <div class="container">
+                        <div class="header-search__field">
+                          <div class="icon icon-search text-dark-1"></div>
+                          <input type="text" class="col-12 text-15 lh-12 text-dark-1 fw-500" placeholder="جستجوی دوره">
+
+                          <button class="d-flex items-center justify-center size-40 rounded-full bg-purple-3" data-el-toggle=".js-search-toggle">
+                            <img src="img/menus/close.svg" alt="icon">
+                          </button>
+                        </div>
+
+                        <div class="header-search__content mt-30">
+                          <div class="text-17 text-dark-1 fw-500">دوره های محبوب</div>
+
+                          <div class="d-flex y-gap-5 flex-column mt-20">
+                            <a href="courses-single-1.html" class="text-dark-1">دوره نهایی طراحی - مبتدی تا پیشرفته</a>
+                            <a href="courses-single-2.html" class="text-dark-1">طراح و تحلیلگر نرم افزار</a>
+                            <a href="courses-single-3.html" class="text-dark-1">یادگیری مدل سازی سه بعدی برای مبتدیان</a>
+                            <a href="courses-single-4.html" class="text-dark-1">ملزومات طراحی تجربه کاربری - Adobe XD UI UX Design</a>
+                            <a href="courses-single-5.html" class="text-dark-1">کلاس کارشناسی ارشد طراحی گرافیک</a>
+                            <a href="courses-single-6.html" class="text-dark-1">دوره آموزشی Adobe Photoshop CC – Essentials</a>
+                          </div>
+
+                          <div class="mt-30">
+                            <button class="uppercase underline">برای دیدن همه نتایج جستجو، ENTER را فشار دهید</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-search__bg" data-el-toggle=".js-search-toggle"></div>
+                  </div>
+                </div>
+
+
+                <div class="relative mr-30 xl:mr-20">
+                  <button class="d-flex items-center text-white" data-el-toggle=".js-cart-toggle">
+                    <i class="text-20 icon icon-basket"></i>
+                  </button>
+
+                  <div class="toggle-element js-cart-toggle">
+                    <div class="header-cart bg-white -dark-bg-dark-1 rounded-8">
+                      <div class="px-30 pt-30 pb-10">
+
+                        <div class="row justify-between x-gap-40 pb-20">
+                          <div class="col">
+                            <div class="row x-gap-10 y-gap-10">
+                              <div class="col-auto">
+                                <img src="img/menus/cart/1.png" alt="image">
+                              </div>
+
+                              <div class="col">
+                                <div class="text-dark-1 lh-15">دوره نهایی نقاشی از مبتدی تا پیشرفته...</div>
+
+                                <div class="d-flex items-center mt-10">
+                                  <div class="lh-12 fw-500 line-through text-light-1 ml-10">179</div>
+                                  <div class="text-15 lh-12 fw-500 text-dark-1">79000 تومان</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-auto">
+                            <button><img src="img/menus/close.svg" alt="icon"></button>
+                          </div>
+                        </div>
+
+                        <div class="row justify-between x-gap-40 pb-20">
+                          <div class="col">
+                            <div class="row x-gap-10 y-gap-10">
+                              <div class="col-auto">
+                                <img src="img/menus/cart/2.png" alt="image">
+                              </div>
+
+                              <div class="col">
+                                <div class="text-dark-1 lh-15">آموزش ساخت وب سایت خبری با React Node</div>
+
+                                <div class="d-flex items-center mt-10">
+                                  <div class="lh-12 fw-500 line-through text-light-1 ml-10">179</div>
+                                  <div class="text-15 lh-12 fw-500 text-dark-1">79000 تومان</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-auto">
+                            <button><img src="img/menus/close.svg" alt="icon"></button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="px-30 pt-20 pb-30 border-top-light">
+                        <div class="d-flex justify-between">
+                          <div class="text-18 lh-12 text-dark-1 fw-500">جمع کل:</div>
+                          <div class="text-18 lh-12 text-dark-1 fw-500">659000 تومان</div>
+                        </div>
+
+                        <div class="row x-gap-20 y-gap-10 pt-30">
+                          <div class="col-sm-6">
+                            <button class="button py-20 -dark-1 text-white -dark-button-white col-12">مشاهده سبد</button>
+                          </div>
+                          <div class="col-sm-6">
+                            <button class="button py-20 -purple-1 text-white col-12">تسویه حساب</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="d-none xl:d-block mr-20">
+                  <button class="text-white items-center" data-el-toggle=".js-mobile-menu-toggle">
+                    <i class="text-11 icon icon-mobile-menu"></i>
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="header-right__buttons d-flex items-center mr-30 md:d-none">
+                <a href="login.html" class="button -underline text-white">ورود</a>
+                <a href="signup.html" class="button -sm -white text-dark-1 mr-30">ثبت نام</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+
+    <div class="content-wrapper  js-content-wrapper">
+
+
+      <section data-anim="fade" class="breadcrumbs ">
+        <div class="container">
+          <div class="row">
+            <div class="col-auto">
+              <div class="breadcrumbs__content">
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">صفحه اصلی</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">سایر</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">فروشگاه</a>
+                </div>
+
+                <div class="breadcrumbs__item ">
+                  <a href="#">سبد خرید</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="page-header -type-1">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="row justify-center text-center">
+              <div class="col-auto">
+                <div data-anim="slide-up delay-1">
+
+                  <h1 class="page-header__title">سبد خرید</h1>
+
+                </div>
+
+                <div data-anim="slide-up delay-2">
+
+                  <p class="page-header__text">ما ماموریت داریم دوره‌های جذاب و مدیریت‌شده را با قیمتی مناسب ارائه دهیم.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="layout-pt-md layout-pb-lg">
+        <div class="container">
+          <div class="row justify-end">
+            <div class="col-12">
+              <div class="px-30 pr-60 py-25 rounded-8 bg-light-6 md:d-none">
+                <div class="row justify-between">
+                  <div class="col-md-4">
+                    <div class="fw-500 text-purple-1">نام کالا</div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="fw-500 text-purple-1">قیمت</div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="fw-500 text-purple-1">تعداد</div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="fw-500 text-purple-1">جمع کل</div>
+                  </div>
+                  <div class="col-md-1">
+                    <div class="d-flex justify-end">
+                      <div class="fw-500 text-purple-1">حذف</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-30 pr-60 md:px-0">
+
+                <div class="row y-gap-20 justify-between items-center pt-30 pb-30 border-bottom-light">
+                  <div class="col-md-4">
+                    <div class="d-flex items-center">
+                      <div class="">
+                        <div class="size-100 bg-image rounded-8 js-lazy" data-bg="img/shop/products/1.png"></div>
+                      </div>
+                      <div class="fw-500 text-dark-1 mr-30">ساعت دیواری چوبی</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2 md:mt-15">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        قیمت
+                      </div>
+                      <p>298000 تومان</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        تعداد
+                      </div>
+
+                      <div class="input-counter md:mt-20 js-input-counter">
+                        <input class='input-counter__counter' type="number" placeholder="value..." value='1' />
+
+                        <div class="input-counter__controls">
+                          <button class='input-counter__up js-down'>
+                            <i class='icon' data-feather="minus"></i>
+                          </button>
+
+                          <button class='input-counter__down js-up'>
+                            <i class='icon' data-feather="plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        جمع کل
+                      </div>
+
+                      <p>526 تومان</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="md:d-none d-flex justify-end">
+                      <i class="icon" data-feather="x"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row y-gap-20 justify-between items-center pt-30 pb-30 border-bottom-light">
+                  <div class="col-md-4">
+                    <div class="d-flex items-center">
+                      <div class="">
+                        <div class="size-100 bg-image rounded-8 js-lazy" data-bg="img/shop/products/2.png"></div>
+                      </div>
+                      <div class="fw-500 text-dark-1 mr-30">کفش پیاده روی مردانه</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2 md:mt-15">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        قیمت
+                      </div>
+                      <p>298000 تومان</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        تعداد
+                      </div>
+
+                      <div class="input-counter md:mt-20 js-input-counter">
+                        <input class='input-counter__counter' type="number" placeholder="value..." value='1' />
+
+                        <div class="input-counter__controls">
+                          <button class='input-counter__up js-down'>
+                            <i class='icon' data-feather="minus"></i>
+                          </button>
+
+                          <button class='input-counter__down js-up'>
+                            <i class='icon' data-feather="plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        جمع کل
+                      </div>
+
+                      <p>526 تومان</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="md:d-none d-flex justify-end">
+                      <i class="icon" data-feather="x"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row y-gap-20 justify-between items-center pt-30 pb-30 border-bottom-light">
+                  <div class="col-md-4">
+                    <div class="d-flex items-center">
+                      <div class="">
+                        <div class="size-100 bg-image rounded-8 js-lazy" data-bg="img/shop/products/3.png"></div>
+                      </div>
+                      <div class="fw-500 text-dark-1 mr-30">کوله پشتی کوهنوردی</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2 md:mt-15">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        قیمت
+                      </div>
+                      <p>298000 تومان</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        تعداد
+                      </div>
+
+                      <div class="input-counter md:mt-20 js-input-counter">
+                        <input class='input-counter__counter' type="number" placeholder="value..." value='1' />
+
+                        <div class="input-counter__controls">
+                          <button class='input-counter__up js-down'>
+                            <i class='icon' data-feather="minus"></i>
+                          </button>
+
+                          <button class='input-counter__down js-up'>
+                            <i class='icon' data-feather="plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="">
+                      <div class="shopCart-products__title d-none md:d-block mb-10">
+                        جمع کل
+                      </div>
+
+                      <p>526 تومان</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1">
+                    <div class="md:d-none d-flex justify-end">
+                      <i class="icon" data-feather="x"></i>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="shopCart-footer px-16 mt-30">
+                <div class="row justify-between y-gap-30">
+                  <div class="col-xl-5">
+                    <form class="" action="">
+                      <div class="d-flex justify-between border-dark">
+                        <input class="rounded-8 px-25 py-20" type="text" placeholder="کد تخفیف">
+                        <button class="text-black fw-500" type="submit">اعمال کد تخفیف</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="col-auto">
+                    <div class="shopCart-footer__item">
+                      <button class="button -md -purple-3 text-purple-1">بروزرسانی</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-5 layout-pt-lg">
+              <div class="py-30 bg-light-4 rounded-8 border-light">
+                <h5 class="px-30 text-20 fw-500">
+                  مبلغ صورت حساب
+                </h5>
+
+                <div class="d-flex justify-between px-30 item mt-25">
+                  <div class="py-15 fw-500 text-dark-1">جمع کل</div>
+                  <div class="py-15 fw-500 text-dark-1">128000 تومان</div>
+                </div>
+
+                <div class="d-flex justify-between px-30 item border-top-dark">
+                  <div class="pt-15 fw-500 text-dark-1">جمع</div>
+                  <div class="pt-15 fw-500 text-dark-1">3259000 تومان</div>
+                </div>
+              </div>
+
+              <a href="shop-checkout.html" class="button -md -purple-1 text-white col-12 mt-30">تسویه حساب</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer -type-1 bg-dark-1 -green-links">
+        <div class="container">
+          <div class="footer-header">
+            <div class="row y-gap-20 justify-between items-center">
+              <div class="col-auto">
+                <div class="footer-header__logo">
+                  <img src="img/footer/footer-logo.svg" alt="logo">
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="footer-header-socials">
+                  <div class="footer-header-socials__title text-white">ما را در شبکه های اجتماعی دنبال کنید</div>
+                  <div class="footer-header-socials__list">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-columns">
+            <div class="row y-gap-30">
+              <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">درباره ما</div>
+                <div class="d-flex y-gap-10 flex-column">
+                  <a href="about-1.html">درباره ما</a>
+                  <a href="blog-list-1.html">لیست وبلاگ</a>
+                  <a href="instructor-become.html">مدرس شوید</a>
+                  <a href="blog-list-1.html">لیست وبلاگ</a>
+                  <a href="#">بازگشت وجه</a>
+                  <a href="contact-1.html">تماس با ما</a>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-8">
+                <div class="text-17 fw-500 text-white uppercase mb-25">دسته بندی ها</div>
+                <div class="row justify-between y-gap-20">
+                  <div class="col-md-6">
+                    <div class="d-flex y-gap-10 flex-column">
+                      <a href="courses-single-1.html">برنامه نویسی</a>
+                      <a href="courses-single-2.html">طراحی وب</a>
+                      <a href="courses-single-3.html">مالی و حسابداری</a>
+                      <a href="courses-single-4.html">فناوری اطلاعات</a>
+                      <a href="courses-single-5.html">هوش مصنوعی</a>
+                      <a href="courses-single-6.html">رباتیک</a>
+                      <a href="courses-single-1.html">بازاریابی</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex y-gap-10 flex-column">
+                      <a href="courses-single-1.html">مدیریت پروژه</a>
+                      <a href="courses-single-2.html">طراحی گرافیک</a>
+                      <a href="courses-single-3.html">نرم افزار</a>
+                      <a href="courses-single-4.html">عکاسی</a>
+                      <a href="courses-single-5.html">بانک های اطلاعاتی</a>
+                      <a href="courses-single-6.html">بهینه سازی وب</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-2 offset-xl-1 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">پشتیبانی</div>
+                <div class="d-flex y-gap-10 flex-column">
+                  <a href="terms.html">المان های کاربردی</a>
+                  <a href="help-center.html">سوالات متداول</a>
+                  <a href="dashboard.html">داشبورد</a>
+                  <a href="contact-1.html">تماس با ما</a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">در تماس باشید</div>
+                <div class="footer-columns-form">
+                  <div>ما اسپم نمی فرستیم پس نگران نباشید.</div>
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" placeholder="ایمیل شما...">
+                      <button type="submit">ارسال</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-30 border-top-light-15">
+            <div class="row justify-between items-center y-gap-20">
+              <div class="col-auto">
+                <div class="d-flex items-center h-100 text-white">
+                  © 2022 کلیه حقوق این قالب متعلق به گروه توسعه پردازان می باشد.
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="d-flex x-gap-20 y-gap-20 items-center flex-wrap">
+                  <div>
+                    <div class="d-flex x-gap-15 text-white">
+                      <a href="help-center.html">پشتیبانی</a>
+                      <a href="terms.html">شرایط</a>
+                      <a href="terms.html">امنیت</a>
+                      <a href="terms.html">حریم خصوصی</a>
+                      <a href="terms.html">ضوابط</a>
+                    </div>
+                  </div>
+
+                  <div>
+                    <a href="#" class="button px-30 h-50 -dark-6 rounded-200 text-white">
+                      <i class="icon-worldwide text-20 ml-15"></i><span class="text-15">فارسی</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
