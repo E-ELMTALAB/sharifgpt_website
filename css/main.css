@@ -9006,19 +9006,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-page-composition .-el-2 {
   position: absolute;
-  bottom: 33px;
+  bottom: -100px;
   left: 90px;
 }
 
 .form-page-composition .-el-3 {
   position: absolute;
-  bottom: 290px;
+  bottom: 250px;
   right: 20px;
 }
 
 .form-page-composition .-el-4 {
   position: absolute;
-  bottom: 300px;
+  bottom: 260px;
   left: 52px;
 }
 
