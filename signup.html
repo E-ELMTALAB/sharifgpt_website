@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/choices.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/vendors.css" />
@@ -243,53 +244,67 @@
                       <a href="login.html" class="text-purple-1">ورود</a>
                     </p>
 
-                    <form
-                      class="contact-form respondForm__form row y-gap-20 pt-30"
-                      action="#"
-                    >
-                      <div class="col-lg-6">
-                        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                          >ایمیل *</label
-                        >
-                        <input type="text" name="title" placeholder="ایمیل" />
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                          >نام کاربری</label
-                        >
-                        <input type="text" name="title" placeholder="admin" />
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                          >رمز عبور *</label
-                        >
-                        <input
-                          type="text"
-                          name="title"
-                          placeholder="*********"
-                        />
-                      </div>
-                      <div class="col-lg-6">
-                        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10"
-                          >تایید رمز عبور *</label
-                        >
-                        <input
-                          type="text"
-                          name="title"
-                          placeholder="*********"
-                        />
-                      </div>
-                      <div class="col-12">
-                        <button
-                          type="submit"
-                          name="submit"
-                          id="submit"
-                          class="button -md -green-1 text-dark-1 fw-500 w-1/1"
-                        >
-                          ثبت نام
-                        </button>
-                      </div>
-                    </form>
+
+<script>
+$(document).ready(function() {
+    $("#signup-form").submit(function(event) {
+        event.preventDefault();
+
+        var email = $('input[name="email"]').val();
+        var username = $('input[name="username"]').val();
+        var password = $('input[name="password"]').val();
+        var confirmPassword = $('input[name="confirm_password"]').val();
+
+        // Basic validation for password matching
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
+        }
+
+        $.ajax({
+            url: 'https://sharifgpt-login.elmtalab3638.workers.dev/api/signup',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({ email: email, username: username, password: password }),
+            success: function(response) {
+                alert('Signup Successful');
+                // Additional success handling
+            },
+            error: function(xhr, status, error) {
+                alert('Signup Failed: ' + xhr.responseText);
+                // Additional error handling
+            }
+        });
+    });
+});
+</script>
+
+
+
+                    <form class="contact-form respondForm__form row y-gap-20 pt-30" id="signup-form">
+    <div class="col-lg-6">
+        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">ایمیل *</label>
+        <input type="email" name="email" placeholder="ایمیل" required>
+    </div>
+    <div class="col-lg-6">
+        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">نام کاربری</label>
+        <input type="text" name="username" placeholder="admin" required>
+    </div>
+    <div class="col-lg-6">
+        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">رمز عبور *</label>
+        <input type="password" name="password" placeholder="*********" required>
+    </div>
+    <div class="col-lg-6">
+        <label class="text-16 lh-1 fw-500 text-dark-1 mb-10">تایید رمز عبور *</label>
+        <input type="password" name="confirm_password" placeholder="*********" required>
+    </div>
+    <div class="col-12">
+        <button type="submit" name="submit" id="submit" class="button -md -green-1 text-dark-1 fw-500 w-1/1">
+            ثبت نام
+        </button>
+    </div>
+</form>
+
 
                   </div>
                 </div>
