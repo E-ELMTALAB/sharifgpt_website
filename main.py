@@ -82,7 +82,7 @@ print("Loading Wikipedia dataset...")
 NUM_SAMPLES = 800  # Adjust this number as needed
 
 # Load the 'train' split
-wiki_dataset = load_dataset('wikipedia', '20220301.en', split='train')
+wiki_dataset = load_dataset('wikipedia', '20220301.en', split='train' , trust_remote_code=True)
 
 # Shuffle the dataset with a random seed for randomness each run
 wiki_dataset = wiki_dataset.shuffle(seed=random.randint(0, 10000))  # Different seed each run
