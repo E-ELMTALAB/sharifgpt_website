@@ -55,7 +55,7 @@ SPECIFIC_TOPIC = None             # e.g., "Topic_1"
 DATA_PERCENTAGE = 0.001  # 0.1% of the dataset
 
 # TF-IDF configuration
-TOP_TFIDF_WORDS = 5000  # Number of top TF-IDF words to include
+TOP_TFIDF_WORDS = 6000  # Number of top TF-IDF words to include
 
 # ---------------------- Preprocessing ---------------------- #
 
@@ -79,7 +79,7 @@ nltk.download('punkt_tab')
 # ---------------------- Load Wikipedia Dataset ---------------------- #
 
 print("Loading Wikipedia dataset...")
-NUM_SAMPLES = 800  # Adjust this number as needed
+NUM_SAMPLES = 1000  # Adjust this number as needed
 
 # Load the 'train' split
 wiki_dataset = load_dataset('wikipedia', '20220301.en', split='train' , trust_remote_code=True)
