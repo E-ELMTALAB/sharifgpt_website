@@ -34,7 +34,7 @@ SESSIONS_FOLDER = 'sessions'  # Folder containing .session files
 API_ID = 1234567               # Replace with your actual API ID
 API_HASH = "abcdef1234567890abcdef1234567892"  # Replace with your actual API Hash
 
-# PostgreSQL configuration
+# PostgreSQL 
 DB_NAME = "propaganda"
 DB_USER = "posts_owner"
 DB_PASSWORD = "jYw1bfDnOHW2"
